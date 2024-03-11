@@ -1,14 +1,13 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">{{ $movie['title'] }}</h5>
-        <h5 class="card-title">{{ $movie['original_title'] }}</h5>
+<div class="card" style="min-height: 245px;">
+    <div class="card-body d-flex flex-column justify-content-center ">
+        <h5 class="card-title">{{ strtoupper($movie['title']) }}</h5>
+        @if ($movie['title'] != $movie['original_title'])
+            <h5 class="card-title">{{ strtoupper($movie['original_title']) }}</h5>
+        @endif
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{ $movie['nationality'] }}</li>
+        <li class="list-group-item">{{ strtoupper($movie['nationality']) }}</li>
         <li class="list-group-item">{{ $movie['date'] }}</li>
         <li class="list-group-item">{{ $movie['vote'] }}</li>
     </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Details</a>
-    </div>
 </div>

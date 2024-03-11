@@ -12,7 +12,7 @@
 
 <body>
     {{-- Header --}}
-    <header class="py-3">
+    <header class="py-3 mb-3">
         <div class="container-sm">
             <h1 class="text-center">Laravel Model & Controller | MOVIE</h1>
         </div>

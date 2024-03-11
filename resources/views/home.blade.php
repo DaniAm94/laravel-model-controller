@@ -5,7 +5,7 @@
 @section('main-content')
     <div class="container-sm">
 
-        <div class="row row-gap-3 ">
+        <div class="row row-gap-3 text-center">
             @isset($movies)
                 @forelse ($movies as $movie)
                     <div class="col-3">
